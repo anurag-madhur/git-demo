@@ -1,20 +1,20 @@
 #include<stdio.h>
 
-int add(int x,int y)
+int add(int x,int y, int z)
 {
-	int z;
-	z=x+y;
-	return z;	
+	int result;
+	result = x+y+z;
+	return result;	
 
 }
 
 void main()
 {
 	int a,b,c,result;
-	scanf("%d%d",&a,&b);
+	scanf("%d%d%d",&a,&b, &c);
 	
-	c=add(a,b);
-	printf("Sum of the two no.s is %d",c);
+	result=add(a,b,c);
+	printf("Sum of the two no.s is %d",result);
 	
 
 }
